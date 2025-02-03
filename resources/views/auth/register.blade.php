@@ -10,20 +10,20 @@
                             <div class="card-header"><h3 class="text-center font-weight-light my-4">Create Account</h3></div>
                             <div class="card-body">
                                 <form action="{{route('proses_register')}}" method="POST" id="regForm">
-                                {{ csrf_field() }}
+                                    {{ csrf_field() }}
                                     <div class="form-group">
                                         <label class="small mb-1" for="inputFirstName">Nama</label>
                                         <input class="form-control py-4" id="inputFirstName" type="text" name="name" placeholder="Masukkan Nama" />
-                                         @if ($errors->has('name'))
-                                          <span class="error"> * {{ $errors->first('name') }}</span>
-                                          @endif
+                                        @if ($errors->has('name'))
+                                            <span class="error"> * {{ $errors->first('name') }}</span>
+                                        @endif
                                     </div>
                                     <div class="form-group">
                                         <label class="small mb-1" for="inputusername">Username</label>
                                         <input class="form-control py-4" id="inputusername" type="text" name="username" placeholder="Masukkan username" />
-                                         @if ($errors->has('username'))
-                                          <span class="error"> * {{ $errors->first('username') }}</span>
-                                          @endif
+                                        @if ($errors->has('username'))
+                                            <span class="error"> * {{ $errors->first('username') }}</span>
+                                        @endif
                                     </div>
                                     <div class="form-group">
                                         <label class="small mb-1" for="inputEmailAddress">Email</label>
