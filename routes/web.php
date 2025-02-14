@@ -5,6 +5,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PembayaranController;
 use App\Http\Controllers\AbsensiController;
+use App\Http\Controllers\DataSiswaController;
+
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
