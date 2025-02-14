@@ -1,5 +1,6 @@
 @extends('layout.layout')
 @section('content')
+
 <div class="bg-secondary">
     <div class="container">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
@@ -18,22 +19,7 @@
         </header>
     </div>
 </div>
-<div class="container">
-    <div id="layoutSidenav_content">
-        <main>
-            <div class="container ">
-                <div class="row justify-content-center align-content-center" style="height: 600px">
-                    <div class="card btn bg-primary p-5 m-5 col-xl-3" style="height: 200px">
-                        <a href="{{ url('absensi') }}" class="my-auto text-decoration-none text-white"><h3>Absensi</h3></a>
-                    </div>
-                    <div class="card btn bg-primary py-5 m-5 col-xl-3">
-                        <a href="{{ url('pembayaran') }}" class="my-auto text-decoration-none text-white"><h3>Pembayaran</h3></a>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
+
+<div class="">
+    <h3>Ini Pembayaran</h3>
 </div>
-
-
-@endsection

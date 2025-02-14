@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     </head>
     <body class="d-flex flex-column min-vh-100">
+
         @yield('content')
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>

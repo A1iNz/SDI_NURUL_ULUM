@@ -3,6 +3,8 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PembayaranController;
+use App\Http\Controllers\AbsensiController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
@@ -28,6 +30,9 @@ Route::get('register', [AuthController::class,'register'])->name('register');
 Route::post('proses_register',[AuthController::class,'proses_register'])->name('proses_register');
 
 Route::get('logout', [AuthController::class,'logout'])->name('logout');
+
+Route::get('absensi', [AbsensiController::class,'index'])->name('absensi');
+Route::get('pembayaran', [PembayaranController::class,'index'])->name('pembayaran');
 
 Route::group(['middleware' => ['auth']], function () {
     Route::group(['middleware' => ['cek_login:admin']], function () {
